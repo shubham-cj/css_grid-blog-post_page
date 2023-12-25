@@ -13,33 +13,35 @@
         </header>
         <nav>
             <p>Categories</p>
-            <li>Film & Cinema</li>
-            <li>Books & Reading</li>
-            <li>Games & Consoles</li>
-            <li>Food & Drink</li>
-            <li>World News</li>
-            <li>Outdoor Living</li>
+            <li onclick="articleFilm()"><a href="#articleBlock">Film & Cinema</a></li>
+            <li onclick="articleBook()"><a href="#articleBlock">Books & Reading</a></li>
+            <li onclick="articleGame()"><a href="#articleBlock">Games & Consoles</a></li>
+            <li onclick="articleFood()"><a href="#articleBlock">Food & Drink</a></li>
+            <li onclick="articleWorld()"><a href="#articleBlock">World News</a></li>
+            <li onclick="articleOutdoor()"><a href="#articleBlock">Outdoor Living</a></li>
         </nav>
-        <article>
-            <h2>The best 5 Battelground Games</h2>
-            <img src="https://images.unsplash.com/photo-1564049489314-60d154ff107d?q=80&w=1783&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="article banner">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae ratione in neque aut, a laudantium, dolor rerum atque quam alias. Ut cum iure quos dolore obcaecati explicabo nulla id eligendi labore eveniet blanditiis impedit facilis perspiciatis hic, exercitationem sed officia dolor sunt sint vitae? Incidunt, expedita accusantium, necessitatibus ex, modi voluptas impedit recusandae fuga aliquid quisquam labore perspiciatis similique.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque recusandae quibusdam voluptatum incidunt aspernatur ullam maxime delectus sunt perspiciatis omnis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta harum, incidunt ducimus omnis similique a ut voluptatum quam. Consequatur fugiat doloribus saepe eum magnam itaque neque recusandae? Pariatur, sit non voluptatibus laborum consequuntur, porro dolorum, in dicta quidem magnam alias.</p>
+        <article id="articleBlock">
+            <h2 id="articleHeading">The best 5 Battelground Games</h2>
+            <img id="articleImg" src="https://images.unsplash.com/photo-1564049489314-60d154ff107d?q=80&w=1783&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="article banner">
+            <p id="articleDescription">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae ratione in neque aut, a laudantium, dolor rerum atque quam alias. Ut cum iure quos dolore obcaecati explicabo nulla id eligendi labore eveniet blanditiis impedit facilis perspiciatis hic, exercitationem sed officia dolor sunt sint vitae? Incidunt, expedita accusantium, necessitatibus ex, modi voluptas impedit recusandae fuga aliquid quisquam labore perspiciatis similique. <br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque recusandae quibusdam voluptatum incidunt aspernatur ullam maxime delectus sunt perspiciatis omnis! <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta harum, incidunt ducimus omnis similique a ut voluptatum quam. Consequatur fugiat doloribus saepe eum magnam itaque neque recusandae? Pariatur, sit non voluptatibus laborum consequuntur, porro dolorum, in dicta quidem magnam alias.
+            </p>
         </article>
         <aside>
             <ul>
                 <li>
                     <p><strong>Published on:</strong></p>
-                    <p>Sep 8th 1999</p>
+                    <p id="date">Sep 8th 1999</p>
                 </li>
                 <li>
                     <p><strong>In the category:</strong></p>
-                    <p>Games & Consoles</p>
+                    <p id="category">Games & Consoles</p>
                 </li>
                 <li>
                     <p><strong>Written by:</strong></p>
-                    <p>Lorem</p>
+                    <p id="author">Lorem</p>
                 </li>
             </ul>
         </aside>
@@ -47,5 +49,7 @@
             <p><span>©</span> 2023 The Fog Wall</p>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
