@@ -76,7 +76,6 @@ footer p span {
         grid-column: span 3;
         border-right: 0;
         border-bottom: 1px solid #ddd;
-        padding: 16px;
     }
     nav li {
         display: inline-block;
@@ -85,7 +84,6 @@ footer p span {
 
     article {
         grid-column: span 2;
-        padding: 16px;
     }
     article h2 {
         font-size: 3em;
@@ -97,6 +95,13 @@ footer p span {
 }
 
 @media screen and (max-width: 980px) {
+    nav {
+        padding: 16px;
+    }
+    
+    article {
+        padding: 16px;
+    }
     article, aside {
         grid-column: span 3;
     }
